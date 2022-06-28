@@ -183,6 +183,10 @@
              width: 10px;
          }
          
+         .border:hover .pd-15 {
+             width: calc(100% - 100px);
+         }
+         
          .flavors {
              white-space: nowrap;
              overflow: hidden;
@@ -211,11 +215,6 @@
          }
          
          .flavors {
-             overflow: hidden;
-             text-overflow: ellipsis;
-         }
-         
-         .major b {
              overflow: hidden;
              text-overflow: ellipsis;
          }

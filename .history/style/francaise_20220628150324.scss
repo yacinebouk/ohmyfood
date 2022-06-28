@@ -208,6 +208,7 @@
          .text {
              overflow: hidden;
              text-overflow: ellipsis;
+             background-color: red;
          }
          
          .flavors {
@@ -215,7 +216,7 @@
              text-overflow: ellipsis;
          }
          
-         .major b {
+         .major {
              overflow: hidden;
              text-overflow: ellipsis;
          }

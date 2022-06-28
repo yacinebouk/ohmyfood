@@ -78,14 +78,6 @@ body {
   flex-direction: row;
 }
 
-@-webkit-keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 .border {
   overflow: hidden;
   margin: 10px;
@@ -189,10 +181,6 @@ h2 {
   width: 10px;
 }
 
-.border:hover .pd-15 {
-  width: calc(100% - 100px);
-}
-
 .flavors {
   white-space: nowrap;
   overflow: hidden;
@@ -218,10 +206,14 @@ h2 {
 .text {
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 50%;
 }
 
 .flavors {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.major b {
   overflow: hidden;
   text-overflow: ellipsis;
 }
