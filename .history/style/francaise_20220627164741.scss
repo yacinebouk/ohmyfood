@@ -1,0 +1,243 @@
+     @font-face {
+         font-family: 'Shrikhand';
+         src: url('./Shrikhand-Regular.otf');
+     }
+     
+     html {
+         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     }
+     
+     header {
+         height: 700px;
+     }
+     
+     main {
+         font-size: 16px;
+     }
+     
+     body {
+         margin: 0;
+     }
+     
+     .img-restaurant {
+         height: 100%;
+         position: relative;
+     }
+     
+     .tittle-head {
+         display: flex;
+         flex-direction: row;
+     }
+     
+     .logo-heart {
+         text-align: center;
+         padding-top: 47px;
+     }
+     
+     .logo-tittle {
+         padding-top: 30px;
+         width: 50%;
+     }
+     
+     .food {
+         padding-top: 30px;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         background-color: #f6f6f6;
+         position: relative;
+         width: 100%;
+         border-radius: 50px 50px 0px 0px;
+         height: auto;
+     }
+     
+     .french-tittle {
+         font-size: 30px;
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         padding-top: 43px;
+         padding-bottom: 10px;
+         justify-content: space-around;
+     }
+     
+     .french-text {
+         padding-right: 30px;
+     }
+     
+     .tittle {
+         text-align: center;
+     }
+     
+     .tittle span {
+         border-bottom: #99E2D0 solid 4px;
+     }
+     
+     .block {
+         padding-top: 10px;
+         display: flex;
+         flex-direction: row;
+     }
+     
+     @-webkit-keyframes fadein {
+         from {
+             opacity: 0;
+         }
+         to {
+             opacity: 1;
+         }
+     }
+     
+     .border {
+         overflow: hidden;
+         margin: 10px;
+         border-radius: 10px;
+         background-color: white;
+         width: 30%;
+         display: flex;
+         justify-content: space-between;
+         flex-direction: row;
+         & {
+             animation: fadein 5s;
+         }
+     }
+     
+     .price {
+         padding-top: 7px;
+         margin-right: 10px;
+         transition-duration: 1000ms;
+     }
+     
+     footer {
+         position: relative;
+         clear: both;
+     }
+     
+     .order {
+         padding-top: 60px;
+         text-align: center;
+         padding-bottom: 100px;
+     }
+     
+     .frame-end {
+         text-align: center;
+         background-color: black;
+         color: white;
+         display: flex;
+         flex-direction: column;
+     }
+     
+     h3 {
+         font-family: 'Shrikhand';
+         font-size: 20px;
+     }
+     
+     h1 {
+         font-family: 'Shrikhand';
+     }
+     
+     h2 {
+         font-family: 'Shrikhand';
+     }
+     
+     .order span {
+         box-shadow: grey 10px 5px 5px;
+         background: linear-gradient(#FF79DA, #9356DC);
+         border-radius: 50px 50px;
+         padding: 15px 60px 15px 60px;
+         color: #f6f6f6;
+     }
+     
+     .pd-15 {
+         width: 100%;
+         padding: 15px 0px 15px 15px;
+     }
+     
+     .border:hover .icon-slide {
+         width: 40px;
+         transition: width 1s;
+     }
+     
+     .border:hover .text {
+         width: cacl(100% - 20px);
+     }
+     
+     .text {
+         white-space: nowrap;
+         overflow: hidden;
+         text-overflow: ellipsis;
+         width: 100%;
+     }
+     
+     .icon-slide {
+         width: 0px;
+         align-items: center;
+         background-color: #99E2D0;
+         color: white;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+     }
+     
+     .block-price {
+         display: flex;
+     }
+     
+     .price b {
+         overflow: hidden;
+         text-overflow: ellipsis;
+         transition-duration: 1000ms;
+     }
+     
+     .contact a {
+         text-decoration: none white;
+         color: white;
+     }
+     
+     @media screen and (min-width: 320px) and (max-width: 768px) {
+         .starter {
+             display: flex;
+             justify-content: space-between;
+             flex-direction: column;
+         }
+         .block {
+             display: flex;
+             justify-content: space-between;
+             flex-direction: column;
+         }
+         .border {
+             width: auto;
+         }
+         .french-tittle {
+             justify-content: space-between;
+             margin-left: 15px;
+         }
+         .tittle {
+             text-align: initial;
+             margin-left: 15px;
+         }
+         h1 {
+             font-size: 24px;
+         }
+         .logo-heart {
+             padding-top: 13px;
+             margin-right: 20px;
+         }
+         .logo-tittle {
+             padding-top: 20px;
+         }
+         .tittle-head {
+             margin: 0;
+             padding: 0;
+             width: 50%;
+         }
+         .frame-end {
+             text-align: initial;
+         }
+         h2 {
+             margin-left: 15px;
+         }
+         .end {
+             margin-left: 15px;
+         }
+     }

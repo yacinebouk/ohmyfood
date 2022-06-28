@@ -79,19 +79,33 @@
          flex-direction: row;
      }
      
+     @-webkit-keyframes fadein {
+         from {
+             opacity: 0;
+         }
+         to {
+             opacity: 1;
+         }
+     }
+     
      .border {
+         overflow: hidden;
          margin: 10px;
          border-radius: 10px;
          background-color: white;
          width: 30%;
-         padding: 15px;
          display: flex;
          justify-content: space-between;
          flex-direction: row;
+         & {
+             animation: fadein 5s;
+         }
      }
      
      .price {
          padding-top: 7px;
+         margin-right: 10px;
+         transition-duration: 1000ms;
      }
      
      footer {
@@ -134,7 +148,53 @@
          color: #f6f6f6;
      }
      
+     .pd-15 {
+         display: flex;
+         width: 100%;
+         padding: 15px 0px 15px 15px;
+     }
+     
+     .border:hover .icon-slide {
+         width: 60px;
+         transition: width 1s;
+     }
+     
+     .text {
+         width: 100%;
+     }
+     
+     .icon-slide {
+         width: 0px;
+         align-items: center;
+         background-color: #99E2D0;
+         color: white;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+     }
+     
+     .block-price {
+         display: flex;
+     }
+     
+     .price b {
+         overflow: hidden;
+         text-overflow: ellipsis;
+         transition-duration: 1000ms;
+     }
+     
+     .contact a {
+         text-decoration: none white;
+         color: white;
+     }
+     
      @media screen and (min-width: 320px) and (max-width: 768px) {
+         .text {
+             display: block;
+             white-space: nowrap;
+             overflow: hidden;
+             text-overflow: ellipsis;
+         }
          .starter {
              display: flex;
              justify-content: space-between;
