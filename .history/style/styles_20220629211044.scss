@@ -199,37 +199,7 @@ h1 {
     -webkit-animation: spin 1.5s linear infinite;
     -o-animation: spin 1.5s linear infinite;
     animation: spin 1.5s linear infinite;
-}
-
-.hide {
-    animation: 2s fadeIn;
-    animation-fill-mode: forwards;
-}
-
-main {
-    animation: 2s fadeOut;
-}
-
-@keyframes fadeOut {
-    0% {
-        visibility: hidden;
-        opacity: 0;
-    }
-    100% {
-        visibility: visible;
-        opacity: 1;
-    }
-}
-
-@keyframes fadeIn {
-    0% {
-        visibility: visible;
-        opacity: 1;
-    }
-    100% {
-        visibility: hidden;
-        opacity: 0;
-    }
+    animation: 1s fadeIn;
 }
 
 @keyframes spin {

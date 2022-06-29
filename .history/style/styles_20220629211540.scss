@@ -202,33 +202,17 @@ h1 {
 }
 
 .hide {
-    animation: 2s fadeIn;
+    animation: 1s fadeIn;
     animation-fill-mode: forwards;
 }
 
-main {
-    animation: 2s fadeOut;
-}
-
-@keyframes fadeOut {
-    0% {
-        visibility: hidden;
-        opacity: 0;
-    }
-    100% {
-        visibility: visible;
-        opacity: 1;
-    }
-}
-
 @keyframes fadeIn {
-    0% {
+    99% {
         visibility: visible;
-        opacity: 1;
     }
     100% {
         visibility: hidden;
-        opacity: 0;
+        visibility: visible;
     }
 }
 

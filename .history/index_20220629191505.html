@@ -11,10 +11,29 @@
 </head>
 
 <body>
-    <div class="hide">
-        <div class="loader"></div>
-    </div>
     <main>
+        <svg class="svg-def">
+            <defs>
+              <filter id="strokeGlow" y="-10" x="-10" width="250" height="150">
+                <feOffset in="StrokePaint" dx="0" dy="0" result="centeredOffset"></feOffset>
+                <feGaussianBlur in="centeredOffset" stdDeviation="2" result="blur1"></feGaussianBlur>
+                <feGaussianBlur in="centeredOffset" stdDeviation="5" result="blur2"></feGaussianBlur>
+                <feGaussianBlur in="centeredOffset" stdDeviation="15" result="blur3"></feGaussianBlur>
+            </defs>
+          </svg>
+        <div class="main-view-container">
+            <div class="loader-container">
+                <svg id="loader" xmlns="http://www.w3.org/2000/svg" width="250px" height="200px" viewBox="0 0 250 200">
+                <svg style="overflow: visible">
+                <path id="jump" fill="none" stroke="#33FFFF" stroke-width="10" stroke-linecap="round" stroke-miterlimit="10" d="M55.5 98.5c0-35.3 31.3-64 70-64s70 28.7 70 64"></path>
+                </svg>
+                <g fill="none" stroke-width="1" stroke="#33FFFF" stroke-linecap="round" stroke-miterlimit="10">
+                    <ellipse id="circleL" cx="55.2" cy="102.5" rx="21.7" ry="5.5"></ellipse>
+                    <ellipse id="circleR" cx="195.2" cy="103.5" rx="21.7" ry="5.5"></ellipse>
+                </g>
+                </svg>
+            </div>
+        </div>
         <header>
             <h1 class="Tittle">ohmyfood</h1>
             <div class="search">

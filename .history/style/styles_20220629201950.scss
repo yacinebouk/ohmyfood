@@ -196,49 +196,8 @@ h1 {
     left: 0;
     right: 0;
     bottom: 0;
-    -webkit-animation: spin 1.5s linear infinite;
-    -o-animation: spin 1.5s linear infinite;
-    animation: spin 1.5s linear infinite;
-}
-
-.hide {
-    animation: 2s fadeIn;
-    animation-fill-mode: forwards;
-}
-
-main {
-    animation: 2s fadeOut;
-}
-
-@keyframes fadeOut {
-    0% {
-        visibility: hidden;
-        opacity: 0;
-    }
-    100% {
-        visibility: visible;
-        opacity: 1;
-    }
-}
-
-@keyframes fadeIn {
-    0% {
-        visibility: visible;
-        opacity: 1;
-    }
-    100% {
-        visibility: hidden;
-        opacity: 0;
-    }
-}
-
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+    -webkit-animation: ;
+    -o-animation: ;
 }
 
 .frame-end {

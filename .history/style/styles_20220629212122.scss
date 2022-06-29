@@ -202,12 +202,12 @@ h1 {
 }
 
 .hide {
-    animation: 2s fadeIn;
+    animation: 1s fadeIn;
     animation-fill-mode: forwards;
 }
 
 main {
-    animation: 2s fadeOut;
+    animation: 1s fadeOut;
 }
 
 @keyframes fadeOut {

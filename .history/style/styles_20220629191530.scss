@@ -171,6 +171,37 @@ h1 {
     justify-content: space-between;
 }
 
+$loader-svg-width: 250px;
+$loader-svg-height: 200px;
+.svg-def {
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+body,
+.main-view-container {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: hsla(150, 2%, 16%, 1);
+}
+
+.loader-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -$loader-svg-width / 2;
+    margin-top: -$loader-svg-height / 2;
+}
+
+.reflection {
+    transform-origin: 50% 110%;
+    transform: scaleY(-1);
+    opacity: 0.09;
+}
+
 .heart-icon {
     margin-right: 10px;
     color: white;
@@ -180,64 +211,6 @@ h1 {
     &:active {
         color: #FF79DA;
         cursor: pointer;
-    }
-}
-
-.loader {
-    border: 10px solid #f3f3f3;
-    border-top: 10px solid red;
-    border-bottom: 10px solid blue;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    margin: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    -webkit-animation: spin 1.5s linear infinite;
-    -o-animation: spin 1.5s linear infinite;
-    animation: spin 1.5s linear infinite;
-}
-
-.hide {
-    animation: 2s fadeIn;
-    animation-fill-mode: forwards;
-}
-
-main {
-    animation: 2s fadeOut;
-}
-
-@keyframes fadeOut {
-    0% {
-        visibility: hidden;
-        opacity: 0;
-    }
-    100% {
-        visibility: visible;
-        opacity: 1;
-    }
-}
-
-@keyframes fadeIn {
-    0% {
-        visibility: visible;
-        opacity: 1;
-    }
-    100% {
-        visibility: hidden;
-        opacity: 0;
-    }
-}
-
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
     }
 }
 
