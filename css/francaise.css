@@ -216,6 +216,12 @@ h2 {
 .major b {
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.major {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .block-price {
@@ -226,6 +232,24 @@ h2 {
 .contact a {
   text-decoration: none white;
   color: white;
+}
+
+.gradient:active:before {
+  font-weight: 900;
+  background-image: linear-gradient(#9356DC, #FF79DA);
+  -webkit-text-fill-color: transparent;
+  transition: transform 3s linear, opacity 3s linear;
+  transform-origin: center 60%;
+  transform: scale(0);
+  opacity: 0;
+}
+
+.gradient {
+  cursor: pointer;
+}
+.gradient:hover::before {
+  transform: scale(1);
+  opacity: 1;
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px) {

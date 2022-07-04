@@ -1,0 +1,411 @@
+main {
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@font-face {
+    font-family: 'Shrikhand';
+    src: url('../language/Shrikhand-Regular.otf');
+}
+
+h1 {
+    font-family: 'Shrikhand';
+}
+
+h3 {
+    font-family: 'Shrikhand';
+}
+
+h2 {
+    text-align: center;
+}
+
+header {
+    text-align: center;
+}
+
+@mixin shadow {
+    box-shadow: grey 10px 5px 5px;
+}
+
+@mixin block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 40px;
+    @include shadow;
+    background-color: rgb(232, 230, 230);
+    border-radius: 20px 20px;
+    padding: 20px 20px 20px 0px;
+    width: 25%;
+    margin: auto;
+}
+
+.logo-img {
+    padding-bottom: 20px;
+}
+
+.search {
+    border: double;
+    margin-left: 25%;
+    margin-right: 25%;
+    background-color: rgb(240, 236, 236);
+    padding-bottom: 20px;
+}
+
+.town {
+    padding-bottom: 15px;
+    border-bottom: lightgray 2px;
+    padding-top: 5px;
+    background-color: grey;
+}
+
+.reservation {
+    padding-top: 20px;
+    padding-bottom: 30px
+}
+
+.discover {
+    padding-bottom: 40px;
+}
+
+.explore {
+    padding-bottom: 40px;
+}
+
+.explore span {
+    @include shadow;
+    background: linear-gradient(#FF79DA, #9356DC);
+    border-radius: 50px 50px;
+    padding: 15px;
+    color: #f6f6f6;
+}
+
+.working {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.number {
+    border: #9356DC solid;
+    border-radius: 50%;
+    background-color: #9356DC;
+    padding: 3px 10px 3px 10px;
+    color: white;
+    margin-left: -15px;
+}
+
+.choose {
+    @include block;
+    margin-bottom: 20px;
+    &:hover {
+        background-color: #d8cee4;
+    }
+}
+
+.compose {
+    @include block;
+    margin-bottom: 20px;
+    &:hover {
+        background-color: #d8cee4;
+    }
+}
+
+.taste {
+    @include block;
+    margin-bottom: 50px;
+    &:hover {
+        background-color: #d8cee4;
+    }
+}
+
+.section-restaurant {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(232, 230, 230);
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.block-restaurant {
+    display: flex;
+    flex-wrap: wrap;
+    height: 900px;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.border-restaurant {
+    width: 40%;
+    height: 44%;
+    overflow: hidden;
+    @include shadow;
+    background-color: white;
+    border-radius: 20px 20px;
+}
+
+.picture-restaurant {
+    height: 80%;
+}
+
+.text {
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.title-restaurant a {
+    text-decoration: none black;
+    color: black;
+}
+
+.block-text {
+    display: flex;
+    place-items: flex-end;
+    justify-content: space-between;
+}
+
+.heart:hover {
+    .heart-icon {
+        display: block;
+    }
+}
+
+
+}
+.heart-icon {
+    display: none;
+     :hover {
+        visibility: visible;
+        animation: color 3s;
+    }
+}
+@keyframes color {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+    
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+.loader {
+    border: 10px solid #f3f3f3;
+    border-top: 10px solid red;
+    border-bottom: 10px solid blue;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-animation: spin 1.5s linear infinite;
+    -o-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+}
+.hide {
+    animation: 2s fadeIn;
+    animation-fill-mode: forwards;
+}
+main {
+    animation: 2s fadeOut;
+}
+@keyframes fadeOut {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+    }
+    
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+@keyframes fadeIn {
+    0% {
+        visibility: visible;
+        opacity: 1;
+    }
+    
+    100% {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.frame-end {
+    text-align: center;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.little-picture {
+    height: 20px;
+}
+.contact a {
+    text-decoration: none white;
+    color: white;
+}
+.block-picture {
+    position: relative;
+    height: 80%;
+}
+.picture-restaurant {
+    height: 100%;
+}
+.new {
+    color: rgb(69, 143, 134);
+    background-color: rgb(119, 224, 212);
+    width: 25%;
+    position: absolute;
+    text-align: center;
+    margin-left: 65%;
+    margin-top: 5%;
+    padding: 10px;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    main {
+        font-size: 20px;
+    }
+    
+    body {
+        margin: 0;
+        width: 100%;
+    }
+    
+    header {
+        width: 100%;
+    }
+    
+    .logo-img {
+        padding-bottom: 10px;
+    }
+    
+    .search {
+        border: none;
+        margin: 0;
+        width: 100%;
+    }
+    
+    .town {
+        padding-top: 5px;
+        background-color: rgb(216, 214, 214);
+        border-bottom: none;
+        border-top: solid 2px grey;
+    }
+    
+    .reservation {
+        font-size: 24px;
+        padding-bottom: 20px;
+    }
+    
+    h1 {
+        text-align: center;
+    }
+    
+    h2 {
+        text-align: initial;
+    }
+    
+    h3 {
+        margin-left: 20px;
+    }
+    
+    .working {
+        margin-left: 20px;
+    }
+    
+    .choose {
+        margin-left: 0;
+        width: 90%;
+    }
+    
+    .compose {
+        margin-left: 0;
+        width: 90%;
+    }
+    
+    .taste {
+        margin-left: 0;
+        width: 90%;
+    }
+    
+    .restaurant {
+        margin-left: 20px;
+    }
+    
+    .block-restaurant {
+        height: auto;
+        justify-content: unset;
+    }
+    
+    .border-restaurant {
+        width: 95%;
+        height: 40%;
+        margin-bottom: 20px;
+    }
+    
+    .picture-restaurant {
+        height: 200px;
+    }
+    
+    .block-text {
+        padding: 10px;
+    }
+    
+    .little-picture {
+        margin-left: 20px;
+        height: 20%;
+    }
+    
+    .frame-end {
+        text-align: initial;
+    }
+    
+    .end {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+    
+    .contact {
+        padding-bottom: 20px;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 991px) {
+    .choose {
+        width: 32%;
+        margin-left: 34%;
+    }
+    
+    .compose {
+        width: 32%;
+        margin-left: 34%;
+    }
+    
+    .taste {
+        width: 32%;
+        margin-left: 34%;
+    }
+}

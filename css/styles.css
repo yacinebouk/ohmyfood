@@ -74,13 +74,12 @@ header {
   border: #9356DC solid;
   border-radius: 50%;
   background-color: #9356DC;
-  padding: 5px 10px 5px 10px;
+  padding: 3px 10px 3px 10px;
   color: white;
   margin-left: -15px;
 }
 
 .choose {
-  margin-bottom: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -90,10 +89,14 @@ header {
   border-radius: 20px 20px;
   padding: 20px 20px 20px 0px;
   width: 25%;
-  margin-left: 40%;
+  margin: auto;
+  margin-bottom: 20px;
 }
 .choose:hover {
   background-color: #d8cee4;
+}
+.choose:hover .logo-work {
+  color: #9356DC;
 }
 
 .compose {
@@ -106,11 +109,14 @@ header {
   border-radius: 20px 20px;
   padding: 20px 20px 20px 0px;
   width: 25%;
-  margin-left: 40%;
+  margin: auto;
   margin-bottom: 20px;
 }
 .compose:hover {
   background-color: #d8cee4;
+}
+.compose:hover .logo-work {
+  color: #9356DC;
 }
 
 .taste {
@@ -123,11 +129,14 @@ header {
   border-radius: 20px 20px;
   padding: 20px 20px 20px 0px;
   width: 25%;
-  margin-left: 40%;
+  margin: auto;
   margin-bottom: 50px;
 }
 .taste:hover {
   background-color: #d8cee4;
+}
+.taste:hover .logo-work {
+  color: #9356DC;
 }
 
 .section-restaurant {
@@ -169,7 +178,7 @@ h1 {
   width: 100%;
 }
 
-.title-restaurant a {
+.text a {
   text-decoration: none black;
   color: black;
 }
@@ -180,16 +189,29 @@ h1 {
   justify-content: space-between;
 }
 
-.heart-icon {
+.heart {
+  font-size: 30px;
+  position: relative;
   margin-right: 10px;
-  color: white;
-  cursor: pointer;
-  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
-  overflow: hidden;
 }
-.heart-icon:active {
-  color: #FF79DA;
+
+.gradient:active:before {
+  -webkit-background-clip: text;
+  font-weight: 900;
+  background-image: linear-gradient(#9356DC, #FF79DA);
+  -webkit-text-fill-color: transparent;
+  transition: transform 3s linear, opacity 3s linear;
+  transform-origin: center 60%;
+  transform: scale(0);
+  opacity: 0;
+}
+
+.gradient {
   cursor: pointer;
+}
+.gradient:hover::before {
+  transform: scale(1);
+  opacity: 1;
 }
 
 .loader {
