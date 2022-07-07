@@ -190,29 +190,70 @@ h1 {
 }
 
 .heart {
-  font-size: 30px;
-  margin-right: 10px;
-}
-
-.gradient:active {
-  -webkit-background-clip: text;
-  font-weight: 900;
-  background-image: linear-gradient(#9356DC, #FF79DA);
-  -webkit-text-fill-color: transparent;
-  transition: transform 1.5s linear, opacity 1.5s linear;
-  transform-origin: center 50%;
-  transform: scale(0);
-  opacity: 1;
-}
-
-.gradient {
+  height: 100%;
+  width: 100px;
+  margin-bottom: auto;
+  min-height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
 }
-.gradient:active {
-  transform: scale(0);
-  opacity: 1;
+.heart button {
+  height: 100%;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+.heart button:focus .heart-solid {
+  animation: 3s colorin;
+  display: flex;
+}
+.heart button:focus .heart-regular {
+  display: none;
 }
 
+.heart-solid {
+  display: none;
+  font-weight: 900;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-image: linear-gradient(#9356DC, #FF79DA);
+  -webkit-text-fill-color: transparent;
+}
+
+i {
+  font-size: 22px;
+}
+
+@keyframes colorin {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
 .loader {
   border: 10px solid #f3f3f3;
   border-top: 10px solid red;

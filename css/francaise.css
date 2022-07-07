@@ -234,25 +234,40 @@ h2 {
   color: white;
 }
 
-.gradient:active:before {
-  -webkit-background-clip: text;
+heart {
+  cursor: pointer;
+}
+
+.heart-regular {
+  z-index: 1;
+  position: relative;
+}
+
+.heart-solid {
+  visibility: hidden;
+  z-index: 1;
+  position: relative;
   font-weight: 900;
   background-image: linear-gradient(#9356DC, #FF79DA);
   -webkit-text-fill-color: transparent;
-  transition: transform 3s linear, opacity 3s linear;
-  transform-origin: center 60%;
-  transform: scale(0);
-  opacity: 0;
 }
 
-.gradient {
-  cursor: pointer;
+@keyframes colorout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
-.gradient:hover::before {
-  transform: scale(1);
-  opacity: 1;
+@keyframes colorin {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .starter {
     display: flex;
