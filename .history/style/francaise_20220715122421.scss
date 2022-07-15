@@ -1,6 +1,6 @@
          @font-face {
              font-family: 'Shrikhand';
-             src: url('../language/Shrikhand-Regular.otf');
+             src: url('/language/Shrikhand-Regular.otf');
          }
          
          html {
@@ -36,11 +36,7 @@
          
          .logo-tittle {
              padding-top: 30px;
-             width: 50%;
-             color: black;
-             & a {
-                 color: black;
-             }
+             width: 35%;
          }
          
          .food {
@@ -334,7 +330,6 @@
              }
              .logo-tittle {
                  padding-top: 20px;
-                 width: 35%;
              }
              .tittle-head {
                  margin: 0;

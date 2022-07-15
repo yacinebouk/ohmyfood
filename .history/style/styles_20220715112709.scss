@@ -37,7 +37,7 @@ header {
     background-color: rgb(232, 230, 230);
     border-radius: 20px 20px;
     padding: 20px 20px 20px 0px;
-    width: 25%;
+    width: 100%;
     margin: auto;
 }
 
@@ -45,18 +45,22 @@ header {
     padding-bottom: 20px;
 }
 
+header {
+    display: flex;
+    flex-direction: row;
+}
+
 .search {
-    margin-right: 25%;
     background-color: rgb(240, 236, 236);
     padding-bottom: 20px;
-    width: 100%;
+    width: 50%;
 }
 
 .town {
     padding-bottom: 15px;
     border-bottom: lightgray 2px;
     padding-top: 5px;
-    background-color: rgb(216, 214, 214);
+    background-color: grey;
 }
 
 .reservation {
@@ -85,7 +89,8 @@ header {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: #f6f6f6
+    width: 100%;
+    margin-left: 50%;
 }
 
 .number {
@@ -432,15 +437,15 @@ main {
 
 @media screen and (min-width: 769px) and (max-width: 991px) {
     .choose {
-        width: 32%;
+        width: 100%;
         margin-left: 34%;
     }
     .compose {
-        width: 32%;
+        width: 100%;
         margin-left: 34%;
     }
     .taste {
-        width: 32%;
+        width: 100%;
         margin-left: 34%;
     }
 }

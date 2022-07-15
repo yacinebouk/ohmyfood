@@ -1,6 +1,6 @@
          @font-face {
              font-family: 'Shrikhand';
-             src: url('../language/Shrikhand-Regular.otf');
+             src: url('./Shrikhand-Regular.otf');
          }
          
          html {
@@ -37,10 +37,6 @@
          .logo-tittle {
              padding-top: 30px;
              width: 50%;
-             color: black;
-             & a {
-                 color: black;
-             }
          }
          
          .food {
@@ -63,6 +59,11 @@
              padding-top: 43px;
              padding-bottom: 10px;
              justify-content: space-around;
+         }
+         
+         .row {
+             display: flex;
+             flex-direction: row;
          }
          
          .french-text {
@@ -161,7 +162,6 @@
          
          h1 {
              font-family: 'Shrikhand';
-             text-align: center;
          }
          
          h2 {
@@ -334,11 +334,11 @@
              }
              .logo-tittle {
                  padding-top: 20px;
-                 width: 35%;
              }
              .tittle-head {
                  margin: 0;
                  padding: 0;
+                 width: 50%;
              }
              .frame-end {
                  text-align: initial;
